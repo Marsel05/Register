@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.button{
+    text-align: center;
+}
+.button a{
+    font-family: "Montserrat", sans-serif;
+    background-color: orange;
+    padding: 20px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.button a {
+    font-family: "Montserrat", sans-serif;
+    background-color: orange ;
+    padding: 20px 50px ;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+
+
+}
+.pop-up{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    transform: translateY(-30.5%)scale(0%);
+    transition: .4s ease-in-out;
+}
+
+.pop-up.active{
+    transform: translateY(0) scale(100%);
+    background-color: rgba(0,0,0, .8);
+
+}
+
+
+
+.pop-up-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop-up-body{
+    margin: auto;
+    width: 500px;
+    background-color: #fff ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 110px 15px;
+    position: relative;
+}
+.pop-up-body p{
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #22262d;
+    margin-bottom: 40px;
+}
+.pop-up-body input {
+    display: block;
+    margin: 25px auto 0 auto;
+    width: 330px;
+    padding: 17px 20px;
+    background-color: #E5E5E5;
+    BORDER-RADIUS: 10px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ff9100;
+    outline: none;
+}
+.pop-up-body button{
+    cursor: pointer;
+    display: block;
+    width: 330px;
+    margin: 60px auto 0 auto;
+    padding: 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: orange;
+}
+.pop-up-body button:active{
+    transition: .4s ease-in-out;
+    background: #212121;
+    color: #ff8200;
+}
+.pop-up-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor: pointer;
+}
